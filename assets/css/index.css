@@ -1,0 +1,74 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header {
+    height:100px;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px rgb(199, 199, 199);
+}
+
+.head {
+    font-size:50px;
+    line-height:100px;
+    text-align: center;
+    color:rgb(61, 123, 255);
+    font-weight: bold;
+}
+
+body {
+    background-image:url('../images/fundo.jpg');
+    background-size: cover;
+    overflow: hidden;
+    height:100vh;
+    width:100vw;
+}
+.box-msg {
+    height:calc(100vh - 200px);
+    overflow-y: scroll;
+}
+
+.mensagem-box {
+    background-color:white;
+    border-radius: 10px;
+    width:300px;
+    margin:0 auto;
+    padding-left:10px;
+}
+.msg-box {
+    position: absolute;
+    bottom:20px;
+    height:60px;
+    width:100vw;
+    background-color:rgb(238, 238, 238);
+    border-radius:10px;
+}
+
+form {
+    display:flex;
+    height:60px;
+}
+.nome,
+.text {
+    margin:10px 10px 10px 10px;
+    border:none;
+    line-height:60px;
+    height:40px;
+    padding-left:10px;
+}
+
+.text {
+    width:calc(100vw - 50px);
+}
+
+form img {
+    border-radius: 8px;
+}
+
+.submit {
+    border:none;
+    margin-right:10px;
+}
