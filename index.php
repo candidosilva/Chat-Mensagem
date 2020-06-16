@@ -42,7 +42,8 @@ if(isset($_POST['nome']) && !empty($_POST['nome'])) {
 
 <?php 
 $sql = "SELECT * FROM mensagens ORDER BY data_msg DESC";
-$sql = $pdo->query($sql);
+$sql = $pdo->prepare($sql);
+$sql->execute();
 if($sql->rowCount() > 0) {
     foreach($sql->fetchAll() as $mensagem):
         ?>
